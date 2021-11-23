@@ -1,0 +1,121 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.rover-header-image {
+  width: 20vw;
+}
+
+.rover-header-right-mobile {
+  border: solid 0.5px #cfd7de;
+  border-radius: 0.3rem;
+  color: #14a96d;
+  padding: 0.5rem;
+}
+
+.rover-header-link {
+  display: none;
+}
+
+@media (min-width: 750px) {
+
+}
+
+.rover-hero-title, .rover-hero-container .rover-cta {
+  display: none;
+}
+
+.rover-hero-container p {
+  padding: 0.5rem;
+  font-weight: 900;
+}
+
+.rover-button {
+  background: #14a96d;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-align: center;
+  /* font-weight: lighter; */
+}
+
+.rover-header-right-drop-down {
+  display: none;
+}
+
+.rover-header-right-drop-down a:hover {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visible {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.rover-middle-section h2 {
+  text-align: center;
+}
+
+/* centering images not working? */
+.rover-mobile-hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: none;
+  justify-content: space-between;
+  grid-gap: 2vw;
+}
+
+.rover-mobile-hero {
+  width: 45vw;
+}
+
+.rover-facts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rover-fact-indiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rover-fact-indiv img {
+  width: 7vw;
+}
+
+.rover-cta-header img {
+  width: 4vw;
+}
